@@ -25,7 +25,4 @@ alpha = { :a=>'._',      :b=>'_...',      #
                                           #
 ###########################################
 
-input = ARGV[0].downcase.tap {|str| str.chars.each {|x| print "#{alpha[x.to_sym]} " } }
-
-
-
+ARGV[0].downcase.chars.each {|x| print "#{alpha[x.to_sym]} " }
