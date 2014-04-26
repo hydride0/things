@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # screenfetch clone for Arch
 
 class String
@@ -14,7 +15,7 @@ end
 require 'colorb'
 
 info = {}
-`cat /proc/cpuinfo`.each_line { |line| line.strip.xtr(info) }
+`cat /proc/cpuinfo | grep 'model name'`.strip.xtr(info)
 `xdpyinfo | grep 'dimensions'`.strip.xtr(info)
 `wmctrl -m | grep 'Name'`.strip.xtr(info)
 
