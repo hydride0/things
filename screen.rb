@@ -21,14 +21,14 @@ info = {}
 
 puts "                   -`".to(:cyan)
 puts "                  .o+`                 ".to(:cyan) + "Host: ".to(:cyan) + `hostname`
-puts "                 ´ooo/                 ".to(:cyan) + "Kernel: ".to(:cyan) +`uname -sr`
-puts "                ´xoooo:                ".to(:cyan) + "OS: ".to(:cyan) + `lsb_release -si`
+puts "                 ´ooo/                 ".to(:cyan) + "OS: ".to(:cyan) + `lsb_release -si`
+puts "                ´xoooo:                ".to(:cyan) + "Kernel: ".to(:cyan) +`uname -sr`
 puts "               ´xoooooo:               ".to(:cyan) + "Uptime: ".to(:cyan) + `uptime -p`
-puts "               -xoooooo+:              ".to(:cyan) + "Editor: ".to(:cyan) + `echo $EDITOR`
+puts "               -xoooooo+:              ".to(:cyan) + "WM: ".to(:cyan) + info["Name"]
 puts "             ´/:-:++oooo+:             ".to(:cyan) + "Shell: ".to(:cyan) + `echo $SHELL`
-puts "            ´/++++/+++++++:            ".to(:cyan) + "CPU: ".to(:cyan) + info["model name"]
-puts "           ´/++++++++++++++:           ".to(:cyan) + "Resolution: ".to(:cyan) + info["dimensions"]
-puts "          ´/+++ooooooooooooo/`         ".to(:cyan) + "WM: ".to(:cyan) + info["Name"]
+puts "            ´/++++/+++++++:            ".to(:cyan) + "Editor: ".to(:cyan) + `echo $EDITOR`
+puts "           ´/++++++++++++++:           ".to(:cyan) + "CPU: ".to(:cyan) + info["model name"]
+puts "          ´/+++ooooooooooooo/`         ".to(:cyan) + "Resolution: ".to(:cyan) + info["dimensions"]
 puts "         ./ooosssso++osssssso+`        ".to(:cyan)
 puts "        .oossssso-````/ossssss+`       ".to(45)
 puts "       -osssssso.      :ssssssso.      ".to(45)
