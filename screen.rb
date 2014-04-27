@@ -7,7 +7,7 @@ class String
 	end
   
 	def xtr(hash)
-		self.match(/(.+):(.+)/) {|m| hash.store( m[1].strip, m[2].strip) }
+		self.match(/(.+):(.+)/) { |m| hash.store( m[1].strip, m[2].strip ) }
 		return hash
 	end
 end
