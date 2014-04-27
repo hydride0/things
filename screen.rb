@@ -28,8 +28,8 @@ puts "               -xoooooo+:              ".to(:cyan) + "WM: ".to(:cyan) + in
 puts "             ´/:-:++oooo+:             ".to(:cyan) + "Shell: ".to(:cyan) + `echo $SHELL`
 puts "            ´/++++/+++++++:            ".to(:cyan) + "Editor: ".to(:cyan) + `echo $EDITOR`
 puts "           ´/++++++++++++++:           ".to(:cyan) + "CPU: ".to(:cyan) + info["model name"]
-puts "          ´/+++ooooooooooooo/`         ".to(:cyan) + "Resolution: ".to(:cyan) + info["dimensions"]
-puts "         ./ooosssso++osssssso+`        ".to(:cyan)
+puts "          ´/+++ooooooooooooo/`         ".to(:cyan) + "Architecture: ".to(:cyan) + `uname -m`
+puts "         ./ooosssso++osssssso+`        ".to(:cyan) + "Resolution: ".to(:cyan) + info["dimensions"]
 puts "        .oossssso-````/ossssss+`       ".to(45)
 puts "       -osssssso.      :ssssssso.      ".to(45)
 puts "      :osssssss/        osssso+++.     ".to(45)
