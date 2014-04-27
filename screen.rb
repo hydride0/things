@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 # screenfetch clone for Arch
+require 'colorb'
 
 class String
 	def xtr(hash)
@@ -7,8 +8,6 @@ class String
 		return hash
 	end
 end
-
-require 'colorb'
 
 info = {}
 `cat /proc/cpuinfo | grep 'model name'`.strip.xtr(info)
