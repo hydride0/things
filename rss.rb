@@ -11,9 +11,9 @@ File.read('rss.txt').each_line { |line| url << line.strip }
 url.each do |url| 
 	open(url) do |rss|
 		feed = RSS::Parser.parse(rss)
-		puts "\t\t\t#{feed.channel.title}\n\n".color(:cyan).bold
+		puts "\t\t\t#{feed.channel.title.cyan.bold}\n\n"
 		feed.items.each do |item|
-			puts "#{item.title.color(:white).bold}\n#{Googl.shorten(item.link).short_url}\n\n"
+			puts "#{item.title.white.bold}\n#{Googl.shorten(item.link).short_url}\n\n"
 		end
 	end
 end
