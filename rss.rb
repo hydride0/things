@@ -3,8 +3,6 @@ require 'open-uri'
 require 'colorb'
 require 'googl'
 
-
-
 url = []
 File.read('rss.txt').each_line { |line| url << line.strip }
 # rss.txt contains rss urls, one per line. You could also rename it if you don't like its name
