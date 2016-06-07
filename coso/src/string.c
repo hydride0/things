@@ -17,7 +17,10 @@ int is_in(const char *str, const char *pattern) {
 
 int calc_new_length(const char *str, const char *subs, const char *new) {
 	int times = is_in(str, subs);
- 	return times? strlen(str) - strlen(subs) * times + strlen(new) * times : 0;
+ 	return times?
+		strlen(str) - strlen(subs) * times + strlen(new) * times :
+		0;
+
 }
 
 void substitute(const char *str, const char *subs, const char *new_subs, char *buffer) {
