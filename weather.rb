@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+#
 require 'json'
 require 'open-uri'
 require 'colorb'
@@ -16,6 +18,7 @@ when "Thunderstorm" then '⚡'.color(226)
 when "Rain"         then '☔'.color(124)
 when "Clear"        then '☀'.color(226)
 when "Snow"         then '❄'.color(159)
+when "Haze"         then '▒'.color(231)
 end
 
 puts "#{parsed['name']} (#{parsed['sys']['country']}) #{icon}" 
